@@ -1,0 +1,498 @@
+/* Basic style */
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: #111;
+  background-color: #FAFAFA;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+ul,
+ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+img {
+  display: block;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+button {
+  font-family: inherit;
+  color: currentColor;
+  cursor: pointer;
+  border-color: transparent;
+
+}
+
+/* Common styles */
+.visually-hidden {
+  position: absolute; 
+  width: 1px;         
+  height: 1px;       
+  margin: -1px;       
+  padding: 0;         
+  border: 0;          
+  clip: rect(0, 0, 0, 0); 
+  clip-path: inset(50%);
+  overflow: hidden;  
+  white-space: nowrap; 
+}
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.container {
+  width: 1168px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-left: auto;
+  margin-right: auto;
+
+
+
+  outline: 3px solid red;
+  outline-offset: -2px;
+}
+
+.ingredients-title,
+.made-title, 
+.products-title, 
+.bestsellers-title, 
+.reviews-title {
+  width: 412px;
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.17;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  text-align: center;
+}
+.accent {
+  color: #FD9222;
+}
+
+/* Header section */
+.header {
+}
+.header-container {
+  display: flex;
+}
+.header-nav {
+  display: flex;
+  margin-right: auto;
+}
+.header-logo {
+  width: 213px;
+  display: flex;
+  align-items: center;
+  margin-right: 365px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.11;
+  letter-spacing: -0.03em;
+  }
+.header-logo-accent {
+  font-style: italic;
+}
+.header-logo-img {
+  margin-left: 4px;
+}
+.header-list {
+  display: flex;
+  gap: 24px;
+
+}
+.header-item {
+}
+.header-link {
+  display: block;
+  padding: 32px 0;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: -0.02em;
+}
+.header-link:hover,
+.header-link:focus  {
+  color: #FD9222;
+}  
+.socials {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.socials-item {
+  gap: 14px;
+}
+.socials-link {
+}
+.socials-icon {
+}
+
+/* Hero section  */
+.hero {
+  padding-bottom: 80px;
+}
+.hero-container {
+  padding: 40px;
+  padding-top: 381px;  
+
+  background-color: rgba(17, 17, 17, 0.7);
+  border-radius: 30px;
+}
+.hero-title {
+  /* padding: 40px;
+  padding-top: 381px;  */
+  width: 484px;
+  margin-bottom: 32px;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1.21;
+  letter-spacing: -0.03em;
+  color: white;
+}
+.hero-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.hero-list {
+  display: flex;
+  gap: 14px;
+}
+.hero-item {
+}
+.hero-btn {
+  border-radius: 100px;
+  padding: 14px 40px;
+  border: 1px solid transparent;
+}
+.hero-btn.primary {
+  color: #fff;
+  background-color: #FD9222;
+}
+.hero-btn.primary:hover,
+.hero-btn.primary:focus {
+  color: #FD9222;
+  background-color: #FCF1E0;
+}
+.hero-btn.secondary {
+  border-color: #fff;
+}
+.hero-btn.secondary:hover,
+.hero-btn.secondary:focus {
+  color: #FD9222;
+  border-color: #FD9222;
+}
+.hero-scroll {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.03em;
+  color: #fff;
+}
+.hero-scroll:hover,
+.hero-scroll:focus {
+  color: #FD9222;
+}
+.circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+/* Features section */
+.features {
+  padding: 50px 0;
+  background-color: #1E1823;
+}
+.features-list {
+  display: flex;
+  justify-content: center;
+  gap: 44px;
+}
+.features-item {
+  width: 308px;
+
+}
+.features-caption {
+  margin-bottom: 18px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.22;
+}
+.features-desc {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 14px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+}
+
+/* Ingredients section */
+.ingredients {
+  padding-top: 120px;
+}
+.ingredients-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+.ingredients-item {
+  padding: 28px 23px;
+  width: calc((100% - 32px * 3) / 4);
+  background-color: #fff;
+  border-radius: 15px;
+  border: 1px solid transparent;
+  box-sizing: border-box;
+  
+}
+.ingredients-item:nth-child(4n + 1) {
+  background-color: #FD9222;
+  color: #fff;
+}
+.ingredients-item:nth-child(4n + 3) {
+  background-color: #1E1823;
+  color: #fff;
+}
+.ingredients-item:nth-child(even) {
+  border-color: #FD9222;
+}
+.ingredients-pic {
+
+}
+.ingredients-caption {
+  margin-top: 36px;
+}
+
+/* Made section */
+.made {
+}
+.made-description {
+  display: flex;
+  align-items: center;
+  gap: 52px;
+
+}
+.made-img {
+  border-radius: 15px;
+
+}
+.made-right-side {
+  background-color: #fff;
+}
+.made-subtitle {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33;
+  width: 350px;
+}
+.made-list {
+  list-style-type: circle;
+  gap: 24px;
+}
+.made-item {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+}
+
+/* Products section */
+.products {
+}
+.products-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+.product-item {
+  text-align: center;
+  padding: 32px 20px;
+  width: calc((100% - 18px * 3) / 4);
+  border-radius: 15px;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  box-sizing: border-box;
+}
+.product-img {
+
+}
+.product-name {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  padding-top: 8px;
+}
+.product-kind {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: -0.02em;
+  color: rgba(17, 17, 17, 0.7);
+}
+.product-price {
+  display: block;
+  margin: 0 auto;
+  margin-top: 18px;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 100px;
+  padding: 8px 20px;
+  width: 94px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+/* Bestsellers section */
+
+.bestsellers {
+}
+.bestsellers-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.bestseller-item {
+  text-align: center;
+  border-radius: 15px;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  width: calc((100% - 16px * 2) / 3);
+  box-sizing: border-box;
+  overflow: hidden;
+
+}
+.bestseller-img {
+
+}
+.bestseller-desc {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  padding-top: 28px;
+  padding-bottom: 28px;
+}
+/* Reviews section */
+.reviews {
+
+
+}
+.reviews-list {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 28px;
+}
+.review-item {
+  width: calc((100% - 28px * 2) / 3);
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 15px;
+  box-shadow: 0 10px 100px 0 rgba(17, 17, 17, 0.1);
+  background: #FAFAFA;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.reviewer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.review-img {
+  
+}
+.reviewer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.reviewer-name {
+  padding-top: 18px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33;
+  text-align: center; 
+}
+.review-desc {
+  padding: 24px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: rgba(17, 17, 17, 0.7);
+}
+.review-btn {
+  border: 1px solid #FD9222;
+  border-radius: 100px;
+  padding: 14px 40px;
+  width: 222px;
+  height: 50px;
+  margin-top: 50px;
+  margin-bottom: 60px;
+ 
+}
+/* Footer section */
+.footer {
+  background-color: #1E1823;
+  color: #FAFAFA;
+}
+.main-part-footer {
+  display: flex;
+}
+
+.footer-slogan {
+}
+.footer-caption {
+}
+.footer-socials {
+ 
+}
+.footer-address {
+}
+.footer-address-list {
+}
+.footer-address-item {
+}
+.footer-address-link {
+}
+.footer-menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+.footer-menu-item {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: -0.02em;
+  padding-bottom: 50px;
+}
+.footer-menu-link {
+}
