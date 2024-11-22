@@ -21,6 +21,7 @@ ol {
 }
 img {
   display: block;
+  max-width: 100%;
 }
 *,
 *::before,
@@ -154,13 +155,18 @@ button {
 .hero-container {
   padding: 40px;
   padding-top: 381px;  
-
-  background-color: rgba(17, 17, 17, 0.7);
   border-radius: 30px;
+  background-color: rgba(17, 17, 17, 0.7);
+  background-image: 
+  linear-gradient(rgba(17, 17, 17, 0.3),
+                  rgba(17, 17, 17, 0.3)),
+                    url(../images/hero/hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  
 }
 .hero-title {
-  /* padding: 40px;
-  padding-top: 381px;  */
   width: 484px;
   margin-bottom: 32px;
   font-size: 28px;
@@ -272,6 +278,9 @@ button {
   box-sizing: border-box;
   
 }
+.ingredients-item:hover {
+  box-shadow: 6px 6px 10px rgba(17, 17, 17, 0.7);
+}
 .ingredients-item:nth-child(4n + 1) {
   background-color: #FD9222;
   color: #fff;
@@ -293,7 +302,7 @@ button {
 /* Made section */
 .made {
 }
-.made-description {
+.made-wrapper {
   display: flex;
   align-items: center;
   gap: 52px;
@@ -413,7 +422,7 @@ button {
   width: calc((100% - 28px * 2) / 3);
   border: 1px solid rgba(17, 17, 17, 0.1);
   border-radius: 15px;
-  box-shadow: 0 10px 100px 0 rgba(17, 17, 17, 0.1);
+  box-shadow: 0 10px 100px 0 rgba(17, 17, 17, 0,1);
   background: #FAFAFA;
   box-sizing: border-box;
   overflow: hidden;

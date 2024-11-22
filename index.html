@@ -9,7 +9,7 @@
   of pure delight!">
   <title>Simply Chocolate</title>
   <!-- Favicon -->
-  <link rel="shortcut icon" href="./images/logo.svg" type="image/svg">
+  <link rel="shortcut icon" href="./images/icon/logo.svg" type="image/svg">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <!-- Fonts -->
@@ -27,7 +27,9 @@
         <a class="header-logo" href="./index.html">
           <span class="header-logo-accent">SIMPLY
           </span>CHOCOLATE
-          <img class="header-logo-img" src="./images/icon/logo.svg" alt="Site logo" width="24" height="24" />
+          <svg class="header-logo-img" width="24px" height="24px">
+            <use href="./images/sprite.svg#icon-logo"></use>
+          </svg>
         </a>
         <ul class="header-list">
           <li class="header-item">
@@ -43,39 +45,36 @@
       </nav>
       <ul class="header-socials socials">
         <li class="socials-item">
-          <a class="socials-link" href="https://facebook.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Facebook site">
-            <img class="socials-icon"
-              src="./images/icon/icon-facebook.svg"
-              alt="Facebook icon"
-              width="24"
-              height="24"  />
+          <a
+            class="socials-link" href="https://facebook.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Facebook site">
+            <svg class="socials-icon" width="24px" height="24px">
+              <use href="./images/sprite.svg#icon-facebook"></use>
+            </svg>
           </a>
         </li>
         <li class="socials-item">
-          <a class="socials-link" href="https://instagram.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Instagram site">
-            <img class="socials-icon"
-              src="./images/icon/icon-instagram.svg"
-              alt="Instagram icon"
-              width="24"
-              height="24"  />
+          <a 
+            class="socials-link" href="https://instagram.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram site">
+            <svg class="socials-icon" width="24px" height="24px">
+              <use href="./images/sprite.svg#icon-instagram"></use>
+            </svg>
           </a>
         </li>
         <li class="socials-item">
-          <a class="socials-link" href="https://twitter.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Twitter site">
-            <img class="socials-icon"
-            src="./images/icon/icon-twitter.svg"
-            alt="Twitter icon"
-            width="24"
-            height="24"  />
+          <a 
+            class="socials-link" href="https://twitter.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Twitter site">
+            <svg class="socials-icon" width="24px" height="24px">
+              <use href="./images/sprite.svg#icon-twitter"></use>
+            </svg>
           </a>
         </li>
       </ul>
@@ -113,14 +112,29 @@
         <h2 class="visually-hidden" hidden>Chocolate benefits</h2>
         <ul class="features-list">
           <li class="features-item">
+            <div class="features-wrapper">
+              <svg class="features-icon" width="32px" height="32px">
+                <use href="./images/sprite.svg#icon-chocolate"></use>
+              </svg>
+            </div>
             <h3 class="features-caption">Unsurpassed taste</h3>
             <p class="features-desc">Crafted with the finest quality cocoa beans and a dedication to perfection, each bite is a decadent experience that simply cannot be matched. Savor the richness and complexity of our Unsurpassed Taste and discover a new level of chocolate bliss.</p>
           </li>
           <li class="features-item">
+            <div class="features-wrapper">
+              <svg class="features-icon" width="32px" height="32px">
+                <use href="./images/sprite.svg#icon-coin"></use>
+              </svg>
+            </div>
             <h3 class="features-caption">Affordable price</h3>
             <p class="features-desc">Indulge in high-quality chocolate without breaking the bank with Simply Chocolate's selection of affordable treats. Enjoy mouth-watering truffles and velvety chocolate bars without sacrificing taste or quality. Browse our selection and indulge in affordable luxury today.</p>
           </li>
           <li class="features-item">
+            <div class="features-wrapper">
+              <svg class="features-icon" width="32px" height="32px">
+                <use href="./images/sprite.svg#icon-spoon"></use>
+              </svg>
+            </div>
             <h3 class="features-caption">Own production</h3>
             <p class="features-desc">We take pride in our own production process, ensuring that every step is carefully crafted to perfection. From selecting the finest ingredients to handcrafting each piece, our attention to detail is evident in every bite.</p>
           </li>
@@ -134,30 +148,51 @@
         <h2 class="ingredients-title">It all adds up to one exceptional <span class="accent">taste</span> sensation</h2>
         <ul class="ingredients-list">
           <li class="ingredients-item">
+            <svg class="ingredients-icon" width="24px" height="24px" >
+              <use href="./images/sprite.svg#icon-arrow"></use>
+            </svg>
             <img class="ingredients-pic" src="./images/ingredients/ingredient_1.png" alt="" width="214" height="160">
             <p class="ingredients-caption">MILK CHOCOLATE</p>
           </li>
           <li class="ingredients-item">
+            <svg class="ingredients-icon" width="24px" height="24px" >
+              <use href="./images/sprite.svg#icon-arrow"></use>
+            </svg>
             <img class="ingredients-pic" src="./images/ingredients/ingredient_2.png" alt="" width="214" height="160">
             <p class="ingredients-caption">MILK</p>
           </li>
           <li class="ingredients-item">
+            <svg class="ingredients-icon" width="24px" height="24px" >
+              <use href="./images/sprite.svg#icon-arrow"></use>
+            </svg>
             <img class="ingredients-pic" src="./images/ingredients/ingredient_3.png" alt="" width="214" height="160">
             <p class="ingredients-caption">NUTS</p>
           </li>
           <li class="ingredients-item">
+            <svg class="ingredients-icon" width="24px" height="24px" >
+              <use href="./images/sprite.svg#icon-arrow"></use>
+            </svg>
             <img class="ingredients-pic" src="./images/ingredients/ingredient_4.png" alt="" width="214" height="160">
             <p class="ingredients-caption">SEMI - SWEET CHOCOLATE</p>
           </li>
           <li class="ingredients-item">
+            <svg class="ingredients-icon" width="24px" height="24px" >
+              <use href="./images/sprite.svg#icon-arrow"></use>
+            </svg>
             <img class="ingredients-pic" src="./images/ingredients/ingredient_5.png" alt="" width="214" height="160">
             <p class="ingredients-caption">CACAO</p>
           </li>
           <li class="ingredients-item">
+            <svg class="ingredients-icon" width="24px" height="24px" >
+              <use href="./images/sprite.svg#icon-arrow"></use>
+            </svg>
             <img class="ingredients-pic" src="./images/ingredients/ingredient_6.png" alt="" width="214" height="160">
             <p class="ingredients-caption">RASPBERRY</p>
           </li>
           <li class="ingredients-item">
+            <svg class="ingredients-icon" width="24px" height="24px" >
+              <use href="./images/sprite.svg#icon-arrow"></use>
+            </svg>
             <img class="ingredients-pic" src="./images/ingredients/ingredient_7.png" alt="" width="214" height="160">
             <p class="ingredients-caption">COCONUT OIL</p>
           </li>
@@ -169,8 +204,16 @@
     <section class="made section" id="made">
       <div class="container">
         <h2 class="made-title">How it’s <span class="accent">made</span>?</h2>
-        <div class="made-description">
-          <img class="made-img" src="./images/made/made.png" width="600" height="400" alt="">
+        <div class="made-wrapper">
+          <div class="made-left-side">
+            <img class="made-img" src="./images/made/made.png" width="600" height="400" alt="">
+            <button class="made-btn" type="button">
+              <svg class="made-btn-icon" width="44px" height="44px">
+                <use href="./images/sprite.svg#icon-play">
+                </use>
+              </svg>
+            </button>
+          </div>
           <div class="made-right-side">
             <h3 class="made-subtitle">Try  our chocolates today and discover the perfect balance of flavor</h3>
             <ol class="made-list">
@@ -307,11 +350,8 @@
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Facebook site">
-                <img class="socials-icon"
-                  src="./images/icon/icon-facebook-footer.svg"
-                  alt="Facebook icon"
-                  width="24"
-                  height="24"  />
+              <svg class="footer-socials-icon"  width="24px" height="24px">
+                <use href="./images/sprite.svg#icon-facebook-footer"></use></svg>
               </a>
             </li>
             <li class="socials-item">
@@ -319,11 +359,8 @@
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Instagram site">
-                <img class="socials-icon"
-                  src="./images/icon/icon-instagram-footer.svg"
-                  alt="Instagram icon"
-                  width="24"
-                  height="24"  />
+              <svg class="footer-socials-icon"  width="24px" height="24px">
+                <use href="./images/sprite.svg#icon-instagram-footer"></use></svg>
               </a>
             </li>
             <li class="socials-item">
@@ -331,11 +368,8 @@
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Twitter site">
-                <img class="socials-icon"
-                src="./images/icon/icon-twitter-footer.svg"
-                alt="Twitter icon"
-                width="24"
-                height="24"  />
+              <svg class="footer-socials-icon"  width="24px" height="24px">
+                <use href="./images/sprite.svg#icon-twitter-footer"></use></svg>
               </a>
             </li>
           </ul>
