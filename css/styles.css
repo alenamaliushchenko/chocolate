@@ -164,7 +164,6 @@ button {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  
 }
 .hero-title {
   width: 484px;
@@ -216,6 +215,7 @@ button {
   line-height: 1.29;
   letter-spacing: -0.03em;
   color: #fff;
+  background-color: transparent;
 }
 .hero-scroll:hover,
 .hero-scroll:focus {
@@ -270,6 +270,7 @@ button {
   gap: 32px;
 }
 .ingredients-item {
+  position: relative;
   padding: 28px 23px;
   width: calc((100% - 32px * 3) / 4);
   background-color: #fff;
@@ -289,9 +290,21 @@ button {
   background-color: #1E1823;
   color: #fff;
 }
-.ingredients-item:nth-child(even) {
+.ingredients-item:nth-child(2n) {
   border-color: #FD9222;
 }
+.ingredients-icon {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  fill: none;
+  stroke: #fff;
+}
+.ingredients-item:nth-child(2n) .ingredients-icon {
+  stroke: #FD9222;
+}
+
+
 .ingredients-pic {
 
 }
@@ -305,17 +318,34 @@ button {
 }
 .made-wrapper {
   display: flex;
-  align-items: center;
-  gap: 50px;
-
+  gap: 20px;
 }
 .made-img {
   border-radius: 15px;
 
 }
+.made-btn {
+  position: absolute;
+  top: calc(50% - 22px);
+  left: calc(50% - 22px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+}
+.made-btn-icon {
+  fill: none;
+  stroke: #fff;
+}
+.made-left-side {
+  position: relative;
+
+}
+
 .made-right-side {
   background-color: #fff;
   padding: 32px;
+  
  
 
 }
@@ -353,6 +383,7 @@ button {
 .made-item:hover::before {
   background-color: #FD9222;
 }
+
 /* Products section */
 .products {
 }
@@ -417,8 +448,30 @@ button {
   overflow: hidden;
 
 }
+.bestsellers-wrapper {
+  position: relative;
+ 
+}
 .bestseller-img {
 
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  line-height: 1.28;
+  letter-spacing: -0.02em;
+  color:#fafafa;
+  padding: 40px;
+  backdrop-filter: blur(8px);
+  background: linear-gradient(161deg, rgba(253, 253, 255, 0.1) 4%, rgba(8, 2, 21, 0.1) 110%);
 }
 .bestseller-desc {
   font-weight: 600;
@@ -431,6 +484,7 @@ button {
 }
 /* Reviews section */
 .reviews {
+  
 
 
 }
@@ -440,28 +494,28 @@ button {
   gap: 28px;
 }
 .review-item {
+  position: relative;
   width: calc((100% - 28px * 2) / 3);
   border: 1px solid rgba(17, 17, 17, 0.1);
   border-radius: 15px;
   box-shadow: 0 10px 100px 0 rgba(17, 17, 17, 0,1);
   background: #FAFAFA;
   box-sizing: border-box;
-  overflow: hidden;
+  overflow: visible;
+  margin-top: 50px;
 }
 .reviewer {
   display: flex;
   flex-direction: column;
   align-items: center;
-
+  padding-top: 40px;
 }
 .review-img {
-  
+  position: absolute;
+  top: -42px;
+  left: calc(50% - 40px);
 }
-.reviewer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+
 .reviewer-name {
   padding-top: 18px;
   font-weight: 600;
