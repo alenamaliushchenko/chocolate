@@ -1,13 +1,20 @@
-const modalForm = document.querySelector('.modal-form');
+const reviewBtn = document.getElementById("review-btn");
+const modal = document.getElementById("modal");
+const closeModalBtn = document.getElementById("modal-btn");
 
-function formInfo(e){
-  e.preventDefault();
+// Функція для відкриття модального вікна
+reviewBtn.addEventListener('click', () => {
+  modal.style.display = "block";
+})
 
-  const userName = e.target.elements.user_name.value;
-  const userEmail = e.target.elements.user_email.value
-  console.log(`User name: ${userName}`);
-  console.log(`User email: ${userEmail}`);
+// Функція для закриття модального вікна
+closeModalBtn.addEventListener('click', () => {
+  modal.style.display = "none";
+})
 
-}
-
-modalForm.addEventListener('submit', formInfo);
+// Закриття модального вікна при кліку поза його межами
+window.addEventListener('click', (event) => {
+  if(event.target === modal) {
+    modal.style.display = "none";
+  }
+})
