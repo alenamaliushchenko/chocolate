@@ -44,35 +44,35 @@
         </ul>
       </nav>
       <ul class="header-socials socials">
-        <li class="socials-item">
+        <li class="header-socials-item">
           <a
-            class="socials-link" href="https://facebook.com"
+            class="header-socials-link" href="https://facebook.com"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Facebook site">
-            <svg class="socials-icon" width="24px" height="24px">
+            <svg class="header-socials-icon" width="24px" height="24px">
               <use href="./images/sprite.svg#icon-facebook"></use>
             </svg>
           </a>
         </li>
         <li class="socials-item">
           <a 
-            class="socials-link" href="https://instagram.com"
+            class="header-socials-link" href="https://instagram.com"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Instagram site">
-            <svg class="socials-icon" width="24px" height="24px">
+            <svg class="header-socials-icon" width="24px" height="24px">
               <use href="./images/sprite.svg#icon-instagram"></use>
             </svg>
           </a>
         </li>
         <li class="socials-item">
           <a 
-            class="socials-link" href="https://twitter.com"
+            class="header-socials-link" href="https://twitter.com"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Twitter site">
-            <svg class="socials-icon" width="24px" height="24px">
+            <svg class="header-socials-icon" width="24px" height="24px">
               <use href="./images/sprite.svg#icon-twitter"></use>
             </svg>
           </a>
@@ -386,7 +386,7 @@
           </ul>
         </div>
         <address class="footer-address">
-          <p>Contact us</p>
+          <p class="adress-title">Contact us</p>
           <ul class="footer-address-list">
             <li class="footer-address-item">
               <a class="footer-address-link" href="tel:+380 (68) 443-94-26">+380 (68) 443-94-26</a>
@@ -398,7 +398,8 @@
         </address>
       </div>
       <div class="footer-bottom">
-        <ul class="footer-menu">
+        <div class="footer-bottom-left" >
+          <ul class="footer-menu">
           <li class="footer-menu-item">
             <a class="footer-menu-link" href="#home">Home</a>
           </li>
@@ -408,15 +409,18 @@
           <li class="footer-menu-item">
             <a class="footer-menu-link" href="#reviews">Chocolate is loved</a>
           </li>
-        </ul>
+          </ul>
+        </div>
 
-        <form action="/subscribe" method="post" class="subscription-form">
-          <label for="email" class="form-label-sub"></label>
-          <div class="form-group">
-            <input type="email" id="email" name="email" class="form-input-sub" placeholder="Enter your email" />
-            <button type="submit" class="submit-btn-subscribe">Subscribe</button>
-          </div>
-        </form>
+        <div class="footer-bottom-right">
+          <form action="/submit" method="POST" class="subscription-form" id="emailForm">
+            <label for="email" class="form-label-sub"></label>
+            <!-- <div class="form-group"> -->
+              <input type="email" id="email" name="email" class="form-input-sub" placeholder="Enter your email" required/>
+              <button type="submit" class="submit-btn-subscribe">Subscribe</button>
+            <!-- </div> -->
+          </form>
+        </div>  
       </div>
     </div>
   </footer>
