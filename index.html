@@ -206,13 +206,15 @@
         <h2 class="made-title">How it’s <span class="accent">made</span>?</h2>
         <div class="made-wrapper">
           <div class="made-left-side">
-            <img class="made-img" src="./images/made/made.png" width="600" height="400" alt="">
+            <iframe src="https://www.youtube.com/embed/2Da33sxLXLM?rel=0" frameborder="0"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen></iframe>
+            <!-- <img class="made-img" src="./images/made/made.png" width="600" height="400" alt="">
             <button class="made-btn" type="button">
               <svg class="made-btn-icon" width="44px" height="44px">
                 <use href="./images/sprite.svg#icon-play">
                 </use>
               </svg>
-            </button>
+            </button> -->
           </div>
           <div class="made-right-side">
             <h3 class="made-subtitle">Try  our chocolates today and discover the perfect balance of flavor</h3>
@@ -425,7 +427,7 @@
     </div>
   </footer>
   <!-- Modal window -->
-  <div id="modal" class="">
+  <div id="modal" style="display: none">
     <div class="modal-content">
       <button id="modal-btn" class="modal-btn" type="button" aria-label="Modal close button">
         <svg class="modal-btn-icon" width="28" height="28">
@@ -437,7 +439,7 @@
       <form class="modal-form form" name="modal" novalidate autocomplete="on">
         <label class="form-label" for="user_name">Name</label>
         <div class="form-field">
-          <input class="form-input" type="text" id="user_name" name="user_name" minlength="3" id="name"/>
+          <input class="form-input" type="text" id="user_name" name="user_name" minlength="3"/>
           <svg class="form-icon" width="24" height="24">
             <use href="./images/sprite.svg#icon-user"></use>
           </svg>
@@ -461,13 +463,25 @@
 
         <label class="form-label" for="user_comment">Comment</label> 
         <div class="form-field"> 
-          <input class="form-input text" type="text" id="user_comment" name="user_comment" placeholder="Enter text" />
+          <textarea class="form-message" name="comment" rows="5" id="user_comment" placeholder="Enter text"></textarea>
         </div>  
 
-        <div class="accept">
-          <input class="accept-box" type="checkbox"/>
-          <p class="acception">I accept the terms and conditions of the <span class="accent-modal">Privacy Policy</span></p>
-        </div>
+        <label class="form-agreement">
+          <input 
+            class="checkbox visually-hidden" 
+            type="checkbox" 
+            name="user_agreement" 
+            value="false" 
+            checked/>
+          <span class="form-agreement-checkbox">
+            <svg class="form-agreement-icon" width="10" height="10">
+              <use href="./images/sprite.svg#icon-checkbox">
+              </use>
+            </svg>
+          </span>
+          I accept the terms and conditions of the 
+          <a href="form-agreement-link"> <span class="accent-modal">Privacy Policy</span></a> 
+        </label>
 
         <button class="submit-btn" type="submit">Send form</button>
         
@@ -476,5 +490,7 @@
   </div>
 
   <script type="module" src="./form.js"></script>
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
 </body>
 </html>

@@ -67,8 +67,8 @@ button {
 
 
 
-  outline: 3px solid red;
-  outline-offset: -2px;
+  /* outline: 3px solid red;
+  outline-offset: -2px; */
 }
 
 .ingredients-title,
@@ -378,7 +378,7 @@ button {
   display: flex;
   gap: 20px;
 }
-.made-img {
+/* .made-img {
   border-radius: 15px;
 
 }
@@ -394,18 +394,27 @@ button {
 .made-btn-icon {
   fill: none;
   stroke: #fff;
-}
+} */
 .made-left-side {
   position: relative;
-
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.made-left-side iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  padding: 32px;
 }
 
 .made-right-side {
   background-color: #fff;
   padding: 32px;
-  
- 
-
 }
 .made-subtitle {
   font-weight: 600;
@@ -459,7 +468,10 @@ button {
   box-sizing: border-box;
 }
 .product-img {
-
+  transition: 0.3s;
+}
+.product-img:hover {
+  transform:scale(1.5);
 }
 .product-name {
   font-weight: 600;
@@ -533,10 +545,10 @@ button {
   transition: transform 500ms ease-in;
 }
 
-.bestseller-item:hover
+/* .bestseller-item:hover
 .overlay {
   transform: translateY(0);
-}
+} */
 .bestseller-desc {
   font-weight: 600;
   font-size: 18px;
@@ -662,19 +674,29 @@ button {
   color: #FD9222;
 }
 .footer-address {
+  
 }
 .adress-title {
+  font-family: 'Montserrat', sans-serif;
   font-weight: 500;
   font-size: 14px;
   line-height: 129%;
-  text-align: center;
+  text-align: start;
   padding-bottom: 14px;
+  font-style: normal;
+  text-decoration: none;
 }
 .footer-address-list {
+ 
 }
 .footer-address-item {
+  margin-bottom: 4px;
 }
 .footer-address-link {
+  font-style: normal;
+  text-decoration: none;
+  color: inherit;
+  font-weight: 400;
 }
 .footer-bottom {
   display: flex;
@@ -844,23 +866,36 @@ button {
   height: 68px;
   border: 2px solid rgba(17, 17, 17, 0.05);
   border-radius: 13px;
-  padding: 22px 24px;
+  padding: 22px 55px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   transition: border-color 300ms ease-in;
 }
+
 
 .form-input:hover,
 .form-input:focus {
   border-color: #FD9222;
 }
-.form-input.text {
+.form-message {
   display: block;
+  width: 100%;
+  border: 2px solid rgba(17, 17, 17, 0.05);
+  border-radius: 13px;
+  padding: 22px 24px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  transition: border-color 300ms ease-in;
 
   height: 137px;
-  padding: 22px 24px;
+ 
   text-align: left;
   resize: none;
 }
+.form-message:hover,
+.form-message:focus {
+  border-color: #FD9222;
+}
+
+
 .form-icon {
   position: absolute;
   top: 0;
@@ -875,32 +910,80 @@ button {
   stroke: #FD9222;
 }
 
-.accept {
+.form-agreement {
+  display: block;
   margin-top: 18px;
-  display: flex;
-  align-items: center;
-}
+  margin-bottom: 40px;
 
-.accent-modal{
+  font-size: 14px;
+  letter-spacing: -0.02em;
+  color: rgba(64, 64, 64, 0.6);
+  cursor: pointer;
+}  
+
+.accent-modal {
   text-decoration: underline;
   text-decoration-skip-ink: none;
   color: #FD9222;
 }
-.accept-box {
+.checkbox {
+  appearance: none;
   border-radius: 6px;
   border: 1px solid rgba(17, 17, 17, 0.14);
   width: 20px;
   height: 20px;
+  transition: all 0.3s ease;
 }
-.acception {
-  display: inline-block;
-  margin-right: 12px;
-  font-weight: 400;
-  font-size: 14px;
-  letter-spacing: -0.02em;
-  color: rgba(64, 64, 64, 0.6);
-  margin-left: 12px;
+.form-agreement-checkbox {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 20px;
+  height: 20px;
+
+  border-radius: 6px;
+  border: 1px solid rgba(17, 17, 17, 0.14);
+  
+  transition: border-color 300ms ease,
+              background-color 300ms ease;
 }
+.checkbox:checked {
+  background-color: #FD9222;
+  border-color: #FD9222;
+  background-position: center;
+}
+.checkbox:focus + .form-agreement-checkbox {
+  background-color: #FD9222;
+  border: 1px solid #FD9222;
+
+}
+.checkbox:focus {
+  outline: 2px solid #FD9222;
+}
+.form-agreement-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10px;
+  height: 10px;
+  fill: #fff;
+  opacity: 0;
+  transform: scale(0.3);
+  transition: opacity 300ms ease 150ms, 
+              transform 300ms ease 150ms; 
+}
+
+ .checkbox:checked + .form-agreement-checkbox .form-agreement-icon {
+  display: block; 
+ }
+.checkbox:focus + .form-agreement-checkbox .form-agreement-icon {
+  opacity: 1;
+  transform: scale(1);
+} 
+
+
+
 .submit-btn {
   border-radius: 100px;
   width: 117px;
