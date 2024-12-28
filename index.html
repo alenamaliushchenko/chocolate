@@ -31,6 +31,11 @@
             <use href="./images/sprite.svg#icon-logo"></use>
           </svg>
         </a>
+        <!-- <button class="menu-btn" type="button" aria-label="Open menu button">
+          <svg class="menu-btn-icon" width="28" height="28">
+            <use href="./images/sprite.svg#icon-menu"></use>
+          </svg>
+        </button> -->
         <ul class="header-list">
           <li class="header-item">
             <a class="header-link" href="#home">Home</a>
@@ -78,6 +83,7 @@
           </a>
         </li>
       </ul>
+      
     </div>
   </header>
   <!-- Unique content -->
@@ -439,7 +445,13 @@
       <form class="modal-form form" name="modal" novalidate autocomplete="on">
         <label class="form-label" for="user_name">Name</label>
         <div class="form-field">
-          <input class="form-input" type="text" id="user_name" name="user_name" minlength="3"/>
+          <input 
+            class="form-input" 
+            type="text" 
+            id="user_name" 
+            name="user_name" 
+            minlength="2"
+            required/>
           <svg class="form-icon" width="24" height="24">
             <use href="./images/sprite.svg#icon-user"></use>
           </svg>
@@ -447,7 +459,12 @@
 
         <label class="form-label" for="user_email">Email</label>
         <div class="form-field"> 
-          <input class="form-input" type="email" id="user_email" name="user_email"/>
+          <input 
+            class="form-input" 
+            type="email" 
+            id="user_email" 
+            name="user_email"
+            required/>
           <svg class="form-icon" width="24" height="24">
             <use href="./images/sprite.svg#icon-message"></use>
           </svg>
@@ -455,7 +472,13 @@
 
         <label class="form-label" for="user_phone">Phone number</label> 
         <div class="form-field"> 
-          <input class="form-input" type="tel" id="user_phone" name="user_phone"/>
+          <input 
+            class="form-input" 
+            type="tel" 
+            id="user_phone" 
+            name="user_phone"
+            maxlength="12"
+            required/>
           <svg class="form-icon" width="24" height="24">
             <use href="./images/sprite.svg#icon-phone"></use>
           </svg>
@@ -488,6 +511,26 @@
       </form>
     </div>
   </div>
+
+  <!-- Mobal menu  -->
+   <div class="mobile-menu">
+    <button class="menu-btn" type="button" aria-label="Open menu button">
+      <svg class="menu-btn-icon" width="28" height="28">
+        <use href="./images/sprite.svg#icon-menu"></use>
+      </svg>
+    </button>
+    <ul class="mobile-menu-list">
+      <li class="mobile-menu-item">
+        <a class="mobile-menu-link" href="#home">Home</a>
+      </li>
+      <li class="mobile-menu-item">
+        <a class="mobile-menu-link" href="#made">How it’s made?</a>
+      </li>
+      <li class="mobile-menu-item">
+        <a class="mobile-menu-link" href="#reviews">Chocolate is loved</a>
+      </li>
+    </ul>
+   </div>
 
   <script type="module" src="./form.js"></script>
   <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
